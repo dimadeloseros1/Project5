@@ -1,0 +1,184 @@
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #d3edf2;
+}
+
+.exodia {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.anime__div > img {
+  object-fit: cover;
+  height: 280px;
+  border-radius: 20rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.anime__div > img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+img {
+  transition: all 0.3s ease;
+}
+
+.article__div--one {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: grid;
+  margin: 30px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 18.8rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.h2 {
+  display: flex;
+  color: green;
+  justify-content: center;
+  animation: nameAnimation 2s linear alternate infinite;
+}
+
+.hobbies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 10px;
+}
+
+.navbar-nav .li__tag {
+  position: relative;
+  font-size: 1.2rem;
+}
+.navbar-nav .li__tag::after {
+  content: "";
+  position: absolute;
+  height: 0.13rem;
+  width: 100%;
+  background: blue;
+  left: 0;
+  bottom: 0;
+  transform: scale(0, 1);
+  transition: transform 0.3s ease-in-out;
+  transform-origin: 0% 100%;
+}
+.navbar-nav .li__tag:hover::after {
+  transform: scale(1, 1);
+}
+
+.a__tag:hover {
+  color: green;
+}
+
+.fieldset > input {
+  height: 35px;
+}
+
+footer {
+  border-top: 2px solid grey;
+}
+footer .fieldset {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  font-size: 1.5rem;
+  min-width: 100px;
+}
+
+#contact {
+  margin: 0rem 5rem;
+}
+
+.about__me {
+  font-size: 1.2rem;
+}
+
+.address__div {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 20px 0 0;
+}
+
+span {
+  margin: 0 5px 0 0;
+}
+
+.submit:hover {
+  background-color: brown;
+  color: #ffffff;
+  cursor: pointer;
+  transform: scaleX(1.05);
+  border-radius: 10px;
+}
+
+.submit {
+  width: 100%;
+  padding: 0.9rem;
+  font-size: 1.3rem;
+  transition: transform 0.3s;
+}
+
+.hobbies__description {
+  border: none;
+  background-color: blanchedalmond;
+  width: 10rem;
+  margin-left: 4rem;
+  margin-top: 0.7rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.hobbies__description:hover {
+  background-color: aquamarine;
+  color: #e04848;
+}
+
+.submit__div {
+  margin: 5px 0 0 0;
+  transition: transform 0.3s ease-out;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+  box-shadow: 0 0 5px rgb(81, 203, 238);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #51cbee;
+  outline: none;
+}
+
+@media (max-width: 1000px) {
+  .navbar-nav .li__tag {
+    position: relative;
+    font-size: 1.2rem;
+    width: 15%;
+  }
+  .navbar-nav .li__tag::after {
+    content: "";
+    position: absolute;
+    height: 0.13rem;
+    width: 100%;
+    background: blue;
+    left: 0;
+    bottom: 0;
+    transform: scale(0, 1);
+    transition: transform 0.3s ease-in-out;
+    transform-origin: 0% 100%;
+  }
+  .navbar-nav .li__tag:hover::after {
+    transform: scale(1, 1);
+  }
+}
+@media (max-width: 900px) {
+  footer .fieldset {
+    width: 100%;
+  }
+}
