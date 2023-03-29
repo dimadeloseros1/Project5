@@ -137,10 +137,6 @@ span {
   cursor: pointer;
 }
 
-.hobbies__description:hover {
-  background-color: aquamarine;
-  color: #e04848;
-}
 
 .submit__div {
   margin: 5px 0 0 0;
