@@ -18,3 +18,22 @@ btn.addEventListener('click', () => {
         })
     }
 });
+
+// Form
+
+
+const submittion = document.querySelector('.submit')
+const form = document.querySelector('#contact')
+
+
+
+function formes(event) {
+    const name = document.querySelector('#name').value
+    const email = document.querySelector('#email').value
+   
+    if(name === '' || email === ''){
+        alert('Please fill out the form!')
+        event.preventDefault(); // prevent form submission
+    }
+}
+form.addEventListener('submit', formes)
